@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block content %}
+<form method="POST">
+    <input type="text" name="first" placeholder="First Name">
+    <input type="text" name="last" placeholder="Last Name">
+    <input type="text" name="image" placeholder="image URL">
+    <a href="/users/{{user}}">Cancel</a>
+    <button type="submit"> Save </button>
+</form>
+
+{% endblock %}
